@@ -1,9 +1,13 @@
-from inputData import *
-
 
 x = 0
 counter = 0
-for i in instructions:
+characters = ""
+
+with open("inputData.txt", "r") as infile:
+    for line in infile:
+        characters += line
+
+for i in characters:
     counter += 1
     if i == "(":
         x += 1
