@@ -1,7 +1,12 @@
 import hashlib
-from inputData import *
 
 i = 0
+
+code = ""
+
+with open("inputData.txt", "r") as infile:
+    for line in infile:
+        code = line
 
 md5_hash_string = ""
 
